@@ -2,7 +2,7 @@ services:
   - type: web
     name: louies_garden_project
     env: python
-    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    buildCommand: pip install -r requirements.txt 
     startCommand: gunicorn louies_garden_project.wsgi:application --workers 2 --bind 0.0.0.0:$PORT
     envVars:
       - key: DJANGO_SETTINGS_MODULE
