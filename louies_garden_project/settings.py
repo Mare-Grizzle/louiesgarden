@@ -26,7 +26,12 @@ SECRET_KEY = 'django-insecure-^h@-#ciw#(c^etpc)@i*adgdvh$=^&mqk0g0-os&(wv)t_d3a#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://louies-garden.onrender.com/','louies-garden.onrender.com', 'louiesgarden.com', 'www.louiesgarden.com']
+ALLOWED_HOSTS = ['https://louies-garden.onrender.com/',
+                 'louies-garden.onrender.com', 
+                 'louiesgarden.com', 
+                 'www.louiesgarden.com',
+                 '127.0.0.1',
+                 ]
 
 
 # Application definition
