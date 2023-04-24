@@ -3,9 +3,9 @@ services:
     name: my-django-app
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn my_django_project.wsgi:application --workers 2 --bind 0.0.0.0:$PORT
+    startCommand: gunicorn louies_garden_project.wsgi:application --workers 2 --bind 0.0.0.0:$PORT
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: my_django_project.settings.production
-      - key: SECRET_KEY
+      - key: OPENAI_API_KEY
         generateValue: true
