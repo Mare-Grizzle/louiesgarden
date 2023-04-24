@@ -4,19 +4,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-  <header style="display: flex; flex-direction: column;">
-    <div>
-      <img src="{% static 'louies_garden_app/images/header.png' %}" alt="Header Image">
-    </div>
-    <div>
+  <header>
+    <div class="header-content">
+      <div class="header-image">
+        <img src="{% static 'louies_garden_app/images/header.png' %}" alt="Header Image">
+      </div>
       <nav>
         <ul>
-          <li><a href="/louies_garden_app/planner/"></i>Planner</a></li>
-          <li><a href="/louies_garden_app/ask/"></i>Ask Louie</a></li>
+          <li><a href="/louies_garden_app/planner/">Planner</a></li>
+          <li><a href="/louies_garden_app/ask/">Ask Louie</a></li>
         </ul>
       </nav>
     </div>

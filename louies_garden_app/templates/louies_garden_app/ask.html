@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
 {% block content %}
   <form method="post">
     {% csrf_token %}
-    <div class="ask-question" style="width: 100%">
+    <div class="ask-question">
       <label for="question">Ask Louie: </label>
-      <input type="text" class="wide" id="question" name="question" value="{{ form.question.value }}" required>
+      <br>
+      <input type="text" class="wide" id="question" name="question" value="{{ form.question.value|default:'' }}" required>
     </div>
     <input type="submit" class="long" value="Ask">
   </form>
 
-  <p> {{ generated_text }} </p>
+  <p class="generated-text"> {{ generated_text }} </p>
 
 {% endblock %}
+
