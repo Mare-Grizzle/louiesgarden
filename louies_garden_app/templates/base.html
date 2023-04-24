@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'louies_garden_app/style.css' %}">
+</head>
+<body>
+  <header style="display: flex; flex-direction: column;">
+    <div>
+      <img src="{% static 'louies_garden_app/images/header.png' %}" alt="Header Image">
+    </div>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="/louies_garden_app/planner/"></i>Planner</a></li>
+          <li><a href="/louies_garden_app/ask/"></i>Ask Louie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <footer>
+    <link rel="stylesheet" href="{% static 'louies_garden_app/style.css' %}">
+    <p>&copy; 2023 Louie's Garden. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

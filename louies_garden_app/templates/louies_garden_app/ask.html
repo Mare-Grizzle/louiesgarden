@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <div class="ask-question" style="width: 100%">
+      <label for="question">Ask Louie: </label>
+      <input type="text" class="wide" id="question" name="question" value="{{ form.question.value }}" required>
+    </div>
+    <input type="submit" class="long" value="Ask">
+  </form>
+
+  <p> {{ generated_text }} </p>
+
+{% endblock %}
