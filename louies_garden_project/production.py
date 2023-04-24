@@ -2,7 +2,7 @@ from .settings import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['louies-garden.onrender.com', 'louiesgarden.com', 'www.louiesgarden.com']
+ALLOWED_HOSTS = ['https://louies-garden.onrender.com/','louies-garden.onrender.com', 'louiesgarden.com', 'www.louiesgarden.com']
 
 
 # Use the environment variable for the secret key
