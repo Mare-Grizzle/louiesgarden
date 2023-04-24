@@ -6,6 +6,6 @@ services:
     startCommand: gunicorn louies_garden_project.wsgi:application --workers 2 --bind 0.0.0.0:$PORT
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: my_django_project.settings.production
+        value: louies_garden_project.settings.production
       - key: OPENAI_API_KEY
         generateValue: true
