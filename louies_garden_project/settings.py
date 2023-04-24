@@ -56,7 +56,7 @@ ROOT_URLCONF = 'louies_garden_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # add this line with your templates directory path
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # add this line with your templates directory path
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
