@@ -33,9 +33,9 @@ def planner(request):
                 Append each new row with /n,
 
                 For example:
-                Row 1:, Tomatoes, 3 rows 17 feet each - 30 inches between rows - 6 starter plants - 12 inches apart, Interplant with basil 4 seeds every 4 inches, Plant starters by March 20th, Harvest by Aug 31st /n,
+                ,Row 1:, Tomatoes, 3 rows 17 feet each - 30 inches between rows - 6 starter plants - 12 inches apart, Interplant with basil, Plant starters by March 20th, Harvest by Aug 31st /n,
                 ...
-                Row 9:, Green beans, 2 rows 17 feet each - 18 inches between rows - 102 seeds - 4 inches apart, Interplant with basil 4 seeds every 4 inches, Plant starters by March 20th, Harvest by Aug 31st /n,
+                Row 9:, Green beans, 2 rows 17 feet each - 18 inches between rows - 102 seeds - 4 inches apart, Interplant with suggested, Plant starters by March 20th, Harvest by Aug 31st /n,
                 ...
 
                 The garden dimensions are {height}ft x {width}ft and the user wants to plant {vegetables}. 
