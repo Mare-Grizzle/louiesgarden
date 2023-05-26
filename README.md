@@ -1,2 +1,2 @@
 # louiesgarden
- AI Gardening Tool
+boiler plate for Django web app
